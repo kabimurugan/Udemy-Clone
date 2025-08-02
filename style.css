@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+  font-family: "Gabarito", sans-serif;
+  
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    gap: 10px;
+    align-items: center;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.navbar__s1__title{
+    color: #8A2BE2;
+
+}
+
+.navbar__s2{
+    padding: 11px;
+    border: black solid 1px;
+    border-radius: 30px;
+    display: flex;
+    width: 50%;
+    margin: 5px;
+    gap: 10px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navbar__s2 input{
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    
+
+}
+
+.navbar__s2 input:focus{
+    outline: none;
+    
+
+}
+
+.navbar__s3{
+    display: flex;
+    gap: 15px;
+}
+
+.navbar__s3 i,p:hover{
+    cursor: pointer;
+}
+
+.contents{
+    border-bottom: black solid 1px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.contents p {
+    background-color: #8A2BE2; /* Purple base */
+    padding: 10px;
+    border-radius: 40px;
+    margin: 10px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    cursor: default; /* Normal cursor */
+}
+
+.contents p:hover {
+    background-color: #e4c3fb; /* Soft pink hover */
+    color: black;              /* Change text color on hover */
+    cursor: pointer;           /* Hand cursor on hover */
+    /* box-shadow: 0 0 10px #FF69B4, 10px 10px 20px #FF69B4; Glow effect */
+}
+
+.front-image img{
+    width: 100%;
+
+}
+
+.recommended{
+
+    padding: 10px;
+    padding-top: 40px;
+}
+
+.recommended__container{
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 15px;
+    
+}
+
+.course-card img {
+    width: 100%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 10px;
+}
+
+/* Hover Effect */
+.course-card img:hover {
+    transform: scale(1.05); /* Zoom in slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    cursor: pointer;
+}
+
+
+.course-card{
+    width: 300px;
+}
+
+.courses{
+    padding: 10px;
+    padding-top: 25px;
+}
+
+.courses__container{
+    padding: 10px;
+    padding-top: 15px;
+    
+   
+}
+
+.courses__list{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 30px;
+     justify-content: space-between;
+    
+}
+
+.courses__list p:hover {
+    background-color: #e4c3fb; /* Soft pink hover */
+    color: black;              /* Change text color on hover */
+    cursor: pointer;           /* Hand cursor on hover */
+    /* box-shadow: 0 0 10px #FF69B4, 10px 10px 20px #FF69B4; Glow effect */
+}
+
+.courses__list p{
+        background-color: #8A2BE2; /* Purple base */
+        color: white;
+    /* border: black solid 2px; */
+    padding: 13px;
+    flex-basis: 23%;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 30px;
+}
+
+/* .courses__title,.courses__desc{
+    margin-left: 10px;
+}
+ */
+
+ .popular{
+    padding: 10px;
+    padding-top: 25px;
+ }
+
+ .popular__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 15px;
+ 
+    
+ }
+
+ .footer{
+    padding: 30px;
+    background-color: #2A2B3F;
+    color: white;
+ }
+
+ .footer__one{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* padding: 0px; */
+ }
+
+ .footer__one__s1 p,.footer__one__s2 p{
+    padding: 10px;
+
+ }
+
+ .footer__two{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 10px;
+
+ 
+ }
