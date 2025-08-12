@@ -56,11 +56,13 @@ body {
 .navbar__s3 {
     display: flex;
     gap: 15px;
+    
 }
 
 .navbar__s3 i,
 .navbar__s3 p:hover {
     cursor: pointer;
+    color: #8A2BE2;
 }
 
 /* My Learning */
