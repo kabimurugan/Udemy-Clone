@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+
+    /* 1. Static - Normal content */
+    .nav {
+      position: static; /* Default */
+      background: #333;
+      color: white;
+      padding: 10px;
+    }
+
+    /* 2. Relative - Slight adjustment for icon */
+    .logo {
+      position: relative;
+      top: 5px; /* Move down a bit */
+      font-weight: bold;
+    }
+
+    /* 3. Absolute - Like a badge in an e-commerce site */
+    .product {
+      position: relative; /* Parent for absolute positioning */
+      display: inline-block;
+      margin: 20px;
+      background: #f4f4f4;
+      padding: 20px;
+      width: 150px;
+    }
+    .badge {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: red;
+      color: white;
+      padding: 2px 6px;
+      font-size: 12px;
+      border-radius: 4px;
+    }
+
+    /* 4. Fixed - Floating chat button */
+    .chat-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #28a745;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    /* 5. Sticky - Sticking header */
+    .section-header {
+      position: sticky;
+      top: 0;
+      background: #ff9800;
+      padding: 10px;
+      font-weight: bold;
+      color: white;
+    }
+
+    /* Scrollable area */
+    .content {
+      height: 1500px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Static -->
+  <div class="nav">
+    <span class="logo">MyWebsite</span> | Home | About | Contact
+  </div>
+
+  <!-- Absolute inside Relative -->
+  <div class="product">
+    Product 1
+    <div class="badge">Sale</div>
+  </div>
+  <div class="product">
+    Product 2
+    <div class="badge">New</div>
+  </div>
+
+  <!-- Sticky Example -->
+  <div class="section-header">Section 1 - Sticky Header</div>
+  <div class="content">
+    Scroll down...  
+    Keep scrolling to see sticky effect.  
+    The chat button will stay fixed.
+  </div>
+
+  <!-- Fixed Example -->
+  <div class="chat-btn">💬 Chat</div>
+
+</body>
+</html>
