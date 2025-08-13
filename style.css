@@ -59,6 +59,10 @@ body {
 
 }
 
+.navbar__s4{
+    display: none;
+}
+
 .navbar__s3 i,
 .navbar__s3 p:hover {
     cursor: pointer;
@@ -93,7 +97,6 @@ body {
     justify-content: space-around;
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -161,21 +164,24 @@ body {
     padding: 10px;
     padding-top: 15px;
     width: 100%;
+
 }
 
 /* Course Cards */
 .course-card {
-    width: 300px;
+    flex-basis: 20%;
+margin: 5px;   
+ flex-grow: 1;
 }
 
 .course-card img {
-    width: 100%;
+    width: 90%;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     border-radius: 10px;
 }
 
 .course-card img:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
@@ -202,8 +208,7 @@ body {
     background-color: #8A2BE2;
     color: white;
     padding: 13px;
-    flex-basis: 23%;
-    flex-grow: 1;
+    flex-basis: 28%;
     text-align: center;
     border-radius: 30px;
     transition: all 0.3s ease;
@@ -256,4 +261,35 @@ body {
     margin-top: 20px;
     padding: 10px;
     width: 100%;
+}
+
+
+@media screen and (max-width:600px){
+    *{
+        font-size: 13px;
+    }
+
+    .navbar__s2, .navbar__s3{
+        display: none;
+    }
+
+    .sale__image{
+        width: 150px;
+        height: 50px;
+        left: 20px;
+        top: 40%;
+    }
+
+    .sale__image h2,p{
+        font-size: 8px;
+    }
+
+    .navbar__s4{
+        display: block;
+    }
+
+    .course-card{
+        flex-basis: 40%;
+    }
+
 }
