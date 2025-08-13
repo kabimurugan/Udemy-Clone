@@ -56,7 +56,7 @@ body {
 .navbar__s3 {
     display: flex;
     gap: 15px;
-    
+
 }
 
 .navbar__s3 i,
@@ -80,6 +80,7 @@ body {
     top: 30px;
     padding: 7px;
     display: none;
+
 }
 
 .mylearning:hover .mylearning__popup {
@@ -101,16 +102,18 @@ body {
     padding: 10px;
     border-radius: 40px;
     margin: 10px;
-    width: 100px;
+    width: 110px;
     color: white;
     text-align: center;
-    transition: all 0.3s ease;
+    border: solid 1px #8A2BE2;
     cursor: default;
 }
 
 .contents p:hover {
-    background-color: #e4c3fb;
-    color: black;
+    background-color: transparent;
+    border: solid 1px #8A2BE2;
+    transition: 1s;
+    color: #8A2BE2;
     cursor: pointer;
 }
 
@@ -131,6 +134,18 @@ body {
     top: 45%;
     left: 40px;
     position: absolute;
+    /* transform: scale(2);
+    transition: 2s;
+    transition-property: scale; */
+    animation-name: moving;
+    animation-duration: 2s;
+}
+
+@keyframes moving {
+    0% {
+        transform: scale(0);
+    }
+
 }
 
 /* Recommended */
